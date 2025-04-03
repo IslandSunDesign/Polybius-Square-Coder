@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head><title>The SketchBox - Polybius Square HTML5 demo</title>
+<LINK REL=StyleSheet HREF="style.css" TYPE="text/css" MEDIA=screen>
+<script type="text/javascript" src="coder.js"></script>
+<meta  name="description" content="This is a simple cipher decoder and coder, based on the polybius square from the greek times. set up your grid with a friend for hidden messages!"/>
+</head>
+<body>
+<h1>The SketchBox : A Simple Polybius Square Coder/Decoder</h1>
+<section class="CoderOuter">
+
+
+<div class="CoderBox2 CBox"><h2>Polybius square:</h2>
+<table width="340" height="340" border="0" cellpadding="3px" cellspacing="0" class="GridItself">
+<tr class="TheLeftCell">
+<td class="TheLeftCell"></td>
+<td class="TheLeftCell"><input type="text" id="KeyCol1" class="CoderSquareInput" size="3" maxlength="1" /></td>
+<td class="TheLeftCell"><input type="text" id="KeyCol2" class="CoderSquareInput" size="3" maxlength="1" /></td>
+<td class="TheLeftCell"><input type="text" id="KeyCol3" class="CoderSquareInput" size="3" maxlength="1" /></td>
+<td class="TheLeftCell"><input type="text" id="KeyCol4" class="CoderSquareInput" size="3" maxlength="1" /></td>
+<td class="TheLeftCell"><input type="text" id="KeyCol5" class="CoderSquareInput" size="3" maxlength="1" /></td>
+<td class="TheLeftCell"><input type="text" id="KeyCol6" class="CoderSquareInput" size="3" maxlength="1" /></td>
+<td class="TheLeftCell"><input type="text" id="KeyCol7" class="CoderSquareInput" size="3" maxlength="1" /></td>
+</tr>
+<tr>
+<td class="TheLeftCell"><input type="text" id="CRow1" class="CoderSquareInput" name="EL" size="3" maxlength="1" /></td>
+<td><input type="text" id="Cinput1" class="CoderSquareInput" name="EL1-1" size="3" maxlength="3" /></td>
+<td><input type="text" id="Cinput2" class="CoderSquareInput" name="EL1-2" size="3" maxlength="3" /></td>
+<td><input type="text" id="Cinput3" class="CoderSquareInput" name="EL1-3" size="3" maxlength="3" /></td>
+<td><input type="text" id="Cinput4" class="CoderSquareInput" name="EL1-4" size="3" maxlength="3" /></td>
+<td><input type="text" id="Cinput5" class="CoderSquareInput" name="EL1-5" size="3" maxlength="3" /></td>
+<td><input type="text" id="Cinput6" class="CoderSquareInput" name="EL1-6" size="3" maxlength="3" /></td>
+<td><input type="text" id="Cinput7" class="CoderSquareInput" name="EL1-7" size="3" maxlength="3" /></td>
+</tr>
+<tr>
+<td class="TheLeftCell"><input type="text" id="CRow2" class="CoderSquareInput" name="EL" size="3" maxlength="1" /></td>
+<td><input type="text" id="Cinput8" class="CoderSquareInput" name="EL2-1" size="3" maxlength="3" /></td>
+<td><input type="text" id="Cinput9" class="CoderSquareInput" name="EL2-2" size="3" maxlength="3" /></td>
+<td><input type="text" id="Cinput10" class="CoderSquareInput" name="EL2-3" size="3" maxlength="3" /></td>
+<td><input type="text" id="Cinput11" class="CoderSquareInput" name="EL2-4" size="3" maxlength="3" /></td>
+<td><input type="text" id="Cinput12" class="CoderSquareInput" name="EL2-5" size="3" maxlength="3" /></td>
+<td><input type="text" id="Cinput13" class="CoderSquareInput" name="EL2-6" size="3" maxlength="3" /></td>
+<td><input type="text" id="Cinput14" class="CoderSquareInput" name="EL2-7" size="3" maxlength="3" /></td>
+</tr>
+<tr>
+<td class="TheLeftCell"><input type="text" id="CRow3" class="CoderSquareInput" name="EL" size="3" maxlength="1" /></td>
+<td><input type="text" id="Cinput15" class="CoderSquareInput" name="EL3-1" size="3" maxlength="3" /></td>
+<td><input type="text" id="Cinput16" class="CoderSquareInput" name="EL3-2" size="3" maxlength="3" /></td>
+<td><input type="text" id="Cinput17" class="CoderSquareInput" name="EL3-3" size="3" maxlength="3" /></td>
+<td><input type="text" id="Cinput18" class="CoderSquareInput" name="EL3-4" size="3" maxlength="3" /></td>
+<td><input type="text" id="Cinput19" class="CoderSquareInput" name="EL3-5" size="3" maxlength="3" /></td>
+<td><input type="text" id="Cinput20" class="CoderSquareInput" name="EL3-6" size="3" maxlength="3" /></td>
+<td><input type="text" id="Cinput21" class="CoderSquareInput" name="EL3-7" size="3" maxlength="3" /></td>
+</tr>
+<tr>
+<td class="TheLeftCell"><input type="text" id="CRow4" class="CoderSquareInput" name="EL" size="3" maxlength="1" /></td>
+<td><input type="text" id="Cinput22" class="CoderSquareInput" name="EL4-1" size="3" maxlength="3" /></td>
+<td><input type="text" id="Cinput23" class="CoderSquareInput" name="EL4-2" size="3" maxlength="3" /></td>
+<td><input type="text" id="Cinput24" class="CoderSquareInput" name="EL4-3" size="3" maxlength="3" /></td>
+<td><input type="text" id="Cinput25" class="CoderSquareInput" name="EL4-4" size="3" maxlength="3" /></td>
+<td><input type="text" id="Cinput26" class="CoderSquareInput" name="EL4-5" size="3" maxlength="3" /></td>
+<td><input type="text" id="Cinput27" class="CoderSquareInput" name="EL4-6" size="3" maxlength="3" /></td>
+<td><input type="text" id="Cinput28" class="CoderSquareInput" name="EL4-7" size="3" maxlength="3" /></td>
+</tr>
+<tr>
+<td class="TheLeftCell"><input type="text" id="CRow5" class="CoderSquareInput" name="EL" size="3" maxlength="1" /></td>
+<td><input type="text" id="Cinput29" class="CoderSquareInput" name="EL5-1" size="3" maxlength="3" /></td>
+<td><input type="text" id="Cinput30" class="CoderSquareInput" name="EL5-2" size="3" maxlength="3" /></td>
+<td><input type="text" id="Cinput31" class="CoderSquareInput" name="EL5-3" size="3" maxlength="3" /></td>
+<td><input type="text" id="Cinput32" class="CoderSquareInput" name="EL5-4" size="3" maxlength="3" /></td>
+<td><input type="text" id="Cinput33" class="CoderSquareInput" name="EL5-5" size="3" maxlength="3" /></td>
+<td><input type="text" id="Cinput34" class="CoderSquareInput" name="EL5-6" size="3" maxlength="3" /></td>
+<td><input type="text" id="Cinput35" class="CoderSquareInput" name="EL5-7" size="3" maxlength="3" /></td>
+</tr>
+<tr>
+<td class="TheLeftCell"><input type="text" id="CRow6" class="CoderSquareInput" name="EL" size="3" maxlength="1" /></td>
+<td><input type="text" id="Cinput36" class="CoderSquareInput" name="EL6-1" size="3" maxlength="3" /></td>
+<td><input type="text" id="Cinput37" class="CoderSquareInput" name="EL6-2" size="3" maxlength="3" /></td>
+<td><input type="text" id="Cinput38" class="CoderSquareInput" name="EL6-3" size="3" maxlength="3" /></td>
+<td><input type="text" id="Cinput39" class="CoderSquareInput" name="EL6-4" size="3" maxlength="3" /></td>
+<td><input type="text" id="Cinput40" class="CoderSquareInput" name="EL6-5" size="3" maxlength="3" /></td>
+<td><input type="text" id="Cinput41" class="CoderSquareInput" name="EL6-6" size="3" maxlength="3" /></td>
+<td><input type="text" id="Cinput42" class="CoderSquareInput" name="EL6-7" size="3" maxlength="3" /></td>
+</tr>
+<tr>
+<td class="TheLeftCell"><input type="text" id="CRow7" class="CoderSquareInput" name="EL" size="3" maxlength="1" /></td>
+<td><input type="text" id="Cinput43" class="CoderSquareInput" name="EL7-1" size="3" maxlength="3" /></td>
+<td><input type="text" id="Cinput44" class="CoderSquareInput" name="EL7-2" size="3" maxlength="3" /></td>
+<td><input type="text" id="Cinput45" class="CoderSquareInput" name="EL7-3" size="3" maxlength="3" /></td>
+<td><input type="text" id="Cinput46" class="CoderSquareInput" name="EL7-4" size="3" maxlength="3" /></td>
+<td><input type="text" id="Cinput47" class="CoderSquareInput" name="EL7-5" size="3" maxlength="3" /></td>
+<td><input type="text" id="Cinput48" class="CoderSquareInput" name="EL7-6" size="3" maxlength="3" /></td>
+<td><input type="text" id="Cinput49" class="CoderSquareInput" name="EL7-7" size="3" maxlength="3" /></td>
+</tr>
+<tr>
+<td class="TheLeftCell"><input type="text" id="CRow8" class="CoderSquareInput" name="EL" size="3" maxlength="1" /></td>
+<td><input type="text" id="Cinput50" class="CoderSquareInput" name="EL8-1" size="3" maxlength="3" /></td>
+<td><input type="text" id="Cinput51" class="CoderSquareInput" name="EL8-2" size="3" maxlength="3" /></td>
+<td><input type="text" id="Cinput52" class="CoderSquareInput" name="EL8-3" size="3" maxlength="3" /></td>
+<td><input type="text" id="Cinput53" class="CoderSquareInput" name="EL8-4" size="3" maxlength="3" /></td>
+<td><input type="text" id="Cinput54" class="CoderSquareInput" name="EL8-5" size="3" maxlength="3" /></td>
+<td><input type="text" id="Cinput55" class="CoderSquareInput" name="EL8-6" size="3" maxlength="3" /></td>
+<td><input type="text" id="Cinput56" class="CoderSquareInput" name="EL8-7" size="3" maxlength="3" /></td>
+</tr>
+
+</table>
+
+
+</div>
+<! -- code key -->
+<aside class="CoderBox3 CBox"><h2>Code Key 1:</h2><textarea id="CodeKey" cols="20" rows="5" style="font-size:12px;"></textarea>
+<input type="button" class="ActionButton ActionButtonRight" onClick="Key2Grid()" value="Write Key to Grid" />
+<input type="button" class="ActionButton ActionButtonRight" onClick="getTheBig56()" value="Get Key from Grid" />
+
+<h2>Code Key Labels:</h2><textarea id="CodeKeyLabels" cols="20" rows="5"></textarea><input type="button" class="ActionButton ActionButtonRight" onclick="KeyLabels2Grid()" value="Write labels to grid" />
+<hr /><h2>Separator : <input type="text" id="OutputSeparator" value="" maxlength="3" size="3" /></h2><hr />
+
+<br />
+
+
+</aside>
+
+<hr style="clear:both;margin:20px auto;"/>
+
+<div class="CoderBox1 CBox CBoxBig"><h2>Translate:</h2><textarea id="CodeInput" cols="70" rows="5"></textarea></div>
+<div class="CoderBox5 CBox CBoxBig"><h2>Output:</h2><textarea id="CodeOutput" cols="70" rows="5"></textarea></div>
+<div class="CoderBox4 CBox"><hr />
+<input type="button" class="ActionButton" onClick="Enc()" value="Encode" />
+<input type="button" class="ActionButton flr" onClick="FlipValues()" value="Flip" />
+<input type="button" class="ActionButton flr" onClick="Decode()" value="Decode" /></div>
+</section>
+</body>
+
+
+</html>

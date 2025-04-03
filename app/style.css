@@ -1,0 +1,94 @@
+body{background:darkblue url('BG.jpg') repeat-x center top;margin:0;padding:0;}
+h1{color:White;text-align:center;} 
+.flr{float:right;} .fll{float:left;}
+textarea{font-size:1.4em;padding:10px;}
+
+.CoderOuter{width:880px;padding:40px;font-size:16px;min-height:220px;margin:50px auto;border:solid 2px black;border-radius:20px;background:#e6e6e6;}
+
+.GridItself{border-color:black;color:White;font-size:14px;font-weight:bold;text-align:center;border-radius:3px;height:363px;width:500px;max-width:500px;}
+.GridItself td{text-align:center;color:White;border-radius:3px;}
+.GridItself td input{color:White;max-width:42px;background: #FFFFFF url('bg_form.png') left top repeat-x;
+	background: -webkit-gradient(linear, left top, left 25, from(#FFFFFF), color-stop(4%, #EEEEEE), to(#FFFFFF));
+	background: -moz-linear-gradient(top, #FFFFFF, #EEEEEE 1px, #FFFFFF 25px);
+	box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+	-moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+	-webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;}
+
+.GridItself .TheLeftCell
+{
+background:black;border-radius:10px; 
+}
+.GridItself .TheLeftCell input,.GridItself{text-shadow: 1px 1px 2px #6e6e6e;
+filter: dropshadow(color=#000000, offx=1, offy=1);}
+
+.GridItself td input.CoderSquareInput{background:transparent;border:solid 2px white;text-align:center;font-size:1.5em;padding:10px;}
+
+.Gradient1,.CoderOuter,h1,h2{background: -moz-linear-gradient(top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.32) 47%, rgba(0,0,0,0) 92%, rgba(0,0,0,0) 98%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.65)), color-stop(47%,rgba(0,0,0,0.32)), color-stop(92%,rgba(0,0,0,0)), color-stop(98%,rgba(0,0,0,0)));
+background: -webkit-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.32) 47%,rgba(0,0,0,0) 92%,rgba(0,0,0,0) 98%);
+background: -o-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.32) 47%,rgba(0,0,0,0) 92%,rgba(0,0,0,0) 98%);
+background: -ms-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.32) 47%,rgba(0,0,0,0) 92%,rgba(0,0,0,0) 98%);
+background: linear-gradient(to bottom, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.32) 47%,rgba(0,0,0,0) 92%,rgba(0,0,0,0) 98%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 );}
+
+
+.ActionButton
+{
+    padding:10px 20px;margin:20px auto;font-size:2.2em;font-weight:bold;
+    font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	background:black;
+	color: #FFFFFF;
+	padding: 10px 20px;
+	border-radius:15px;
+}
+
+
+
+.CoderBox3 .ActionButtonRight{font-size:1.5em;border-radius:3px;padding: 5px 10px;width:250px;}
+
+.ActionButton:hover
+{
+    -webkit-box-shadow: 2px 2px 2px 3px #FFF;
+box-shadow: 2px 2px 2px 3px #FFF;background-color:#555;}
+              
+ .Gradient3,.CBox{ 
+     background: rgb(30,87,153);
+background: -moz-linear-gradient(-45deg, rgba(30,87,153,1) 0%, rgba(0,117,214,1) 8%, rgba(41,137,216,1) 35%, rgba(32,124,202,1) 51%, rgba(125,185,232,1) 100%);
+background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(30,87,153,1)), color-stop(8%,rgba(0,117,214,1)), color-stop(35%,rgba(41,137,216,1)), color-stop(51%,rgba(32,124,202,1)), color-stop(100%,rgba(125,185,232,1)));
+background: -webkit-linear-gradient(-45deg, rgba(30,87,153,1) 0%,rgba(0,117,214,1) 8%,rgba(41,137,216,1) 35%,rgba(32,124,202,1) 51%,rgba(125,185,232,1) 100%);
+background: -o-linear-gradient(-45deg, rgba(30,87,153,1) 0%,rgba(0,117,214,1) 8%,rgba(41,137,216,1) 35%,rgba(32,124,202,1) 51%,rgba(125,185,232,1) 100%);
+background: -ms-linear-gradient(-45deg, rgba(30,87,153,1) 0%,rgba(0,117,214,1) 8%,rgba(41,137,216,1) 35%,rgba(32,124,202,1) 51%,rgba(125,185,232,1) 100%);
+background: linear-gradient(135deg, rgba(30,87,153,1) 0%,rgba(0,117,214,1) 8%,rgba(41,137,216,1) 35%,rgba(32,124,202,1) 51%,rgba(125,185,232,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=1 );
+}
+
+
+
+
+.InnerGradient,.CBoxBig textarea
+{
+-webkit-box-shadow: inset 2px 2px 2px 2px;
+box-shadow: inset 2px 2px 2px 2px; }
+              
+              
+.CoderBox3 .ActionButton{margin:0px;font-size:1.5em;padding:5px;}
+.CoderBox4 .ActionButton{margin:0px;font-size:2.5em;padding:5px;}
+
+/* Boxes */
+
+/* 1)all boxes: */
+.CBox{padding:10px;border-radius:15px;-webkit-box-shadow: 2px 2px 2px 2px ;box-shadow: 2px 2px 2px 2px ;margin:10px; }
+.CBoxBig{width:400px;float:left;}
+.CBoxBig textarea{height: 223px;width: 399px;}
+
+
+/* 2)layout for individual boxes: */
+.CoderBox1{clear:both;}
+.CBox h2{color:White;text-align:center;margin:0px center;border-radius:5px;}
+.CoderBox2{clear:both;float:left;width:65%;}
+.CoderBox3{float:right;width:30%;margin-right:-45px;}
+.CoderBox3 textarea{height: 99px;
+width: 261px;}
+.CoderBox4{clear:both;width:500px;margin:30px auto;}
+.CoderBox5{float:right;}
